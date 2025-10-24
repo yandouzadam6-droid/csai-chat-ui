@@ -19,8 +19,8 @@ export default async function handler(req, res) {
   try {
     // If you set an env var on Vercel, use it; otherwise hardcode your n8n webhook URL
     const N8N_WEBHOOK_URL =
-      process.env.N8N_WEBHOOK_URL ||
-      'https://trustedadvisors.app.n8n.cloud/webhook-test/csai/chat';
+  process.env.N8N_WEBHOOK_URL ||
+  'https://trustedadvisors.app.n8n.cloud/webhook/csai/chat';
 
     const { chat_id, message } = req.body || {};
 
